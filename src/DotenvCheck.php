@@ -4,15 +4,10 @@ use League\CLImate\CLImate;
 
 class DotenvCheck
 {
-    private $cli;
-
-    public function __construct()
+    public static function check()
     {
-        $this->cli = new CLImate;
-    }
+        $cli = new CLImate;
 
-    public function check()
-    {
         $file = fopen(".env", "r");
         $env = [];
         while (feof($file) === false) {
@@ -35,16 +30,16 @@ class DotenvCheck
             }
         }
 
-        $this->cli->br()->yellow('The following variables are missing from your .env file');
+        $cli->br()->yellow('The following variables are missing from your .env file');
         $result = array_diff($envExample, $env);
         foreach ($result as $variable) {
-            $this->cli->red(sprintf('- %s', $variable));
+            $cli->red(sprintf('- %s', $variable));
         }
 
-        $this->cli->br()->yellow('The following variables are in your .env file but not in .env.example');
+        $cli->br()->yellow('The following variables are in your .env file but not in .env.example');
         $result = array_diff($env, $envExample);
         foreach ($result as $variable) {
-            $this->cli->red(sprintf('- %s', $variable));
+            $cli->red(sprintf('- %s', $variable));
         }
     }
 }
