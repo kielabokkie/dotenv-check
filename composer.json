@@ -1,0 +1,18 @@
+{
+    "name": "kielabokkie/dotenv-check",
+    "description": "Checks the differences between dotenv files",
+    "authors": [
+        {
+            "name": "kielabokkie",
+            "email": "kielabokkie@gmail.com"
+        }
+    ],
+    "require": {
+        "league/climate": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kielabokkie\\DotenvCheck\\": "src/"
+        }
+    }
+}
