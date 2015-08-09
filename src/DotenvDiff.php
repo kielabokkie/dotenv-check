@@ -3,10 +3,10 @@
 use Symfony\Component\Console\Helper\FormatterHelper;
 use Symfony\Component\Console\Output\ConsoleOutput;
 
-class DotenvCheck
+class DotenvDiff
 {
     /**
-     * Run the dotenv checker
+     * Run the dotenv diff
      */
     public static function run()
     {

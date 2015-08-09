@@ -1,9 +1,9 @@
 {
-    "name": "kielabokkie/dotenv-check",
+    "name": "kielabokkie/dotenv-diff",
     "description": "Checks the differences between dotenv files",
     "authors": [
         {
-            "name": "kielabokkie",
+            "name": "Wouter Peschier",
             "email": "kielabokkie@gmail.com"
         }
     ],
