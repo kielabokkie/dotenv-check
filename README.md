@@ -29,6 +29,8 @@ From the root of your project execute the following command:
 cp vendor/kielabokkie/dotenv-diff/git/hooks/post-merge .git/hooks/
 ```
 
+**Note: this will overwrite your existing `post-merge` hook so if you already have one you'll need to figure out how to combine multiple post merge hooks**
+
 ### Composer
 
 You can also set it up so it runs whenever you run composer commands like `composer install` or `composer update`.
