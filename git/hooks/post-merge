@@ -1,0 +1,19 @@
+#!/usr/bin/php
+<?php
+
+require __DIR__ . '/../../vendor/autoload.php';
+
+use Kielabokkie\DotenvDiff;
+use Symfony\Component\Console\Application;
+
+class DotenvDiffTool extends Application
+{
+    public function doRun()
+    {
+        $checker = new DotenvDiff;
+        $checker::run();
+    }
+}
+
+$console = new DotenvDiffTool();
+$console->run();

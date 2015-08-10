@@ -6,11 +6,29 @@ This package automatically compares your `.env` an `.env.example` files and noti
 
 The preferred way of installing this package is through composer:
 
-```shell
+```
 composer require kielabokkie/dotenv-diff
 ```
 
-To automatically check the difference between your dotenv files when you run composer commands add the following to your `composer.json` file:
+## Usage
+
+Once the package is installed there are two ways of running the Dotenv diff automatically, either by using git hooks or composer scripts.
+
+### Git hooks
+
+First of all you can have the Dotenv diff run automatically when you do a `git pull`. To set this up you'll need to copy over the supplied `post-merge` git hook to your `.git/hooks` folder.
+
+From the root of your project execute the following command:
+
+```
+cp vendor/kielabokkie/dotenv-diff/git/hooks/post-merge .git/hooks/
+```
+
+### Composer
+
+You can also set it up so it runs whenever you run composer commands like `composer install` or `composer update`.
+
+All you need to do is call the `run` method from the scripts section of your `composer.json` file:
 
 ```json
 {
