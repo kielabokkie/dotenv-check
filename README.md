@@ -2,6 +2,7 @@
 
 [![Author](http://img.shields.io/badge/by-@kielabokkie-lightgrey.svg?style=flat-square)](https://twitter.com/kielabokkie)
 [![Packagist Version](https://img.shields.io/packagist/v/kielabokkie/dotenv-diff.svg?style=flat-square)](https://packagist.org/packages/pixelfusion/blueman)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-2DCD76.svg?style=flat-square)](https://gitter.im/kielabokkie/dotenv-diff)
 
 This package automatically compares your `.env` an `.env.example` files and notifies you when there are differences.
