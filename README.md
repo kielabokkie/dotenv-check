@@ -1,5 +1,7 @@
 # Dotenv diff
 
+[![Join the chat at https://gitter.im/kielabokkie/dotenv-diff](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/kielabokkie/dotenv-diff?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This package automatically compares your `.env` an `.env.example` files and notifies you when there are differences.
 
 ## Installation
